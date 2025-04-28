@@ -12,5 +12,8 @@ scanner: sweep.o
 scanner%: sweep%.o
 	$(CC) $(LDFLAGS) -o $@ $^
 
+fpspy-perf: fpspy-perf.o
+	$(CC) $(LDFLAGS) -o $@ $^
+
 clean:
-	rm -f scanner sweep.o
+	rm -f scanner sweep.o fpspy-perf fpspy-perf.o
